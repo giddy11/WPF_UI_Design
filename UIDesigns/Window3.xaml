@@ -20,32 +20,36 @@
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="25"/>
-            <ColumnDefinition Width="250"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
             <ColumnDefinition Width="25"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="25"/>
-            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition />
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Title:" Grid.Row="1" Grid.Column="1" FontSize="20" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="3" VerticalAlignment="Center"/>
-        <TextBlock Text="Area:" Grid.Row="1" Grid.Column="5" FontSize="20" VerticalAlignment="Center"/>
-        <ComboBox Grid.Row="1" Grid.Column="7" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="3" Margin="5" Grid.ColumnSpan="3" VerticalAlignment="Center" />
+        <TextBlock Text="Area:" Grid.Row="1" Grid.Column="7" FontSize="20" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="1" Grid.Column="9" VerticalAlignment="Center" Grid.ColumnSpan="3"/>
 
         <TextBlock Text="Category:" Grid.Row="2" Grid.Column="1" FontSize="20" VerticalAlignment="Center"/>
-        <ComboBox Grid.Row="2" Grid.Column="3" VerticalAlignment="Center"/>
-        <TextBlock Text="Assigned To:" Grid.Row="2" Grid.Column="5" FontSize="20" VerticalAlignment="Center"/>
-        <ComboBox Grid.Row="2" Grid.Column="7" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="2" Grid.Column="3" Margin="5" VerticalAlignment="Center" Grid.ColumnSpan="3"/>
+        <TextBlock Text="Assigned To:" Grid.Row="2" Grid.Column="7" FontSize="20" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="2" Grid.Column="9" Margin="5" Grid.ColumnSpan="3" VerticalAlignment="Center"/>
 
         <TextBlock Text="Status:" Grid.Row="3" Grid.Column="1" FontSize="20" VerticalAlignment="Center"/>
-        <ComboBox Grid.Row="3" Grid.Column="3" VerticalAlignment="Center"/>
-        <TextBlock Text="Estimate:" Grid.Row="3" Grid.Column="5" FontSize="20" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="7" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="3" Grid.Column="3" Margin="5" Grid.ColumnSpan="3" VerticalAlignment="Center"/>
+        <TextBlock Text="Estimate:" Grid.Row="3" Grid.Column="7" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="9" Margin="5" Grid.ColumnSpan="3" VerticalAlignment="Center"/>
 
         <TextBlock Text="Tags:" Grid.Row="4" Grid.Column="1" FontSize="20" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="4" Grid.Column="3" VerticalAlignment="Center"/>
-        <TextBlock Text="Version:" Grid.Row="4" Grid.Column="5" FontSize="20" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="4" Grid.Column="7" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="3" Margin="5" Grid.ColumnSpan="3" VerticalAlignment="Center"/>
+        <TextBlock Text="Version:" Grid.Row="4" Grid.Column="7" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="9" Margin="5" Grid.ColumnSpan="3" VerticalAlignment="Center"/>
     </Grid>
 </Window>
