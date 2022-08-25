@@ -5,11 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UIDesigns"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Registration_Form"  Height="450" Width="800">
+    <Grid Background="BlanchedAlmond">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <DockPanel LastChildFill="False">
+            <TextBlock Text="Registration:" DockPanel.Dock="Left" Height="40" VerticalAlignment="Top" FontSize="30" Margin="15,10" FontWeight="Medium"/>
+            <TextBlock DockPanel.Dock="Right" Margin="55,10" Height="30" VerticalAlignment="Top" FontWeight="Medium" FontSize="20" FontStyle="Italic">
+                <Hyperlink Foreground="BlueViolet">Login</Hyperlink>
+            </TextBlock>
+        </DockPanel>
         
-        
-        
+        <Grid Grid.Row="1" Background="White" Margin="50,0,50,50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="First Name:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="4" Margin="-2,5,77,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="Last Name:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBox Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="4" Margin="-2,5,77,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Text="Email Id:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBox Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="4" Margin="-2,5,77,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Text="Password:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBox Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="4" Margin="-2,5,77,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="5" Grid.Column="1" Text="Confirm Password:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBox Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="4" Margin="-2,5,77,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="6" Grid.Column="1" Text="Address:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+            <TextBox Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="4" Margin="-2,5,77,0" VerticalAlignment="Center"/>
+
+            <Button Content="Submit" Grid.Row="7" Grid.Column="3" Margin="0,0,5,10"/>
+            <Button Content="Reset" Grid.Row="7" Grid.Column="4" Margin="0,0,5,10"/>
+            <Button Content="Cancel" Grid.Row="7" Grid.Column="5" Margin="0,0,2,10"/>
+        </Grid>
     </Grid>
 </Window>
